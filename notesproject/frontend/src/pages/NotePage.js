@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg'
 import { Link } from 'react-router-dom'
 
+
 const NotePage = ({ match, history }) => {
 
     let noteId = match.params.id
@@ -54,7 +55,7 @@ const NotePage = ({ match, history }) => {
 
     let handleSubmit = () => {
         console.log('NOTE:', note)
-        if (noteId !== 'new' && note.body === '') {
+        if (noteId !== 'new' && note.body == '') {
             deleteNote()
         } else if (noteId !== 'new') {
             updateNote()

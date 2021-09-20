@@ -159,4 +159,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     )
 }
-DATA_UPLOAD_MAX_NUMBER_FIELDS = None
+
+CORS_ORIGIN_WHITELIST = ( 'http://127.0.0.1:8000', )
