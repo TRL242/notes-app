@@ -1,2 +1,3 @@
 # Project exclude paths
 /venv/
+notesproject/frontend/node_modules
